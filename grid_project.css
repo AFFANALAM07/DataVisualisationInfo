@@ -1,0 +1,212 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the Grid Header */
+.grid1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ff9671;
+    height: 80px;
+    padding: 0 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.p1 {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu-btn {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    color: #ff6f91;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #ff6f91;
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Grid Container Styling */
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    margin: 30px 20px;
+}
+
+/* Styling for Subgrid Items */
+.subgrid {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px; /* Adjusted height for better image fit */
+    width: 100%;
+    cursor: pointer;
+}
+
+.subgrid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjusted Image Styling */
+.subgrid .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px; /* Adjusted height for the image container */
+    width: 100%;
+    overflow: hidden;
+}
+
+.subgrid .img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure image fits within container */
+    transition: transform 0.3s ease;
+
+}
+
+.subgrid:hover .img img {
+    transform: scale(1.05);
+}
+
+.para {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the About Us Section */
+.about-us {
+    grid-column: 1 / -1; /* This makes the About Us section span the entire width of the grid */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    color: #ff6f91;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-us p {
+    font-size: 1.3em;
+    color: #333333;
+    line-height: 2;
+    text-align: justify;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Styling for the Contact Us Section */
+.contact-us {
+    grid-column: 2 / span 3; /* Span 3 columns in the center */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    width: 50%; /* Make it half-width */
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+}
+
+.contact-us h2 {
+    font-size: 2em;
+    color: #fa2c5c;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us button {
+    font-size: 1em;
+    padding: 10px;
+    background-color: #ff6f91;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-us button:hover {
+    background-color: #ff9671;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 5px 0;
+}
