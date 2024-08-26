@@ -14,91 +14,91 @@
     <!-- Grid2-->
     <div class="grid2" id="subgrid-section">
         
-        <div class="subgrid">
+        <div class="subgrid" id="law-subgrid">
             <div class="img">
                 <img src="thumnails/law.png" alt="Thumbnail 1">
             </div>
             <div><p class="para">Law</p></div>
         </div>
         <div class="subgrid">
-            <div class="img">
+            <div class="img" id ="sports-subgrid">
                 <img src="thumnails/OIP (3).jpeg" alt="Thumbnail 2">
             </div>
             <div><p class="para">Sports</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="tech-subgrid">
             <div class="img">
                 <img src="thumnails/techjpg.jpg">
             </div>
             <div><p class="para">Technology</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="health-subgrid">
             <div class="img">
                 <img src="thumnails/health.jpg" alt="Thumbnail 4">
             </div>
             <div><p class="para">Health</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="geo-subgrid">
             <div class="img">
                 <img src="thumnails/OIP6.jpeg" alt="Thumbnail 5">
             </div>
             <div><p class="para">GeoPolitics</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="Science-subgrid">
             <div class="img">
                 <img src="thumnails/OIP7.jpeg" alt="Thumbnail 6">
             </div>
             <div><p class="para">Science</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="eco-subgrid">
             <div class="img">
                 <img src="thumnails/Eco.png" alt="Thumbnail 7">
             </div>
             <div><p class="para">Economics</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="travel-subgrid">
             <div class="img">
                 <img src="thumnails/travel.jpg" alt="Thumbnail 8">
             </div>
             <div><p class="para">Travel</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="geography-subgrid">
             <div class="img">
                 <img src="thumnails/geography.jpeg"Thumbnail 9">
             </div>
             <div><p class="para">Geography</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="Education-subgrid">
             <div class="img">
                 <img src="thumnails/edu.jpeg" alt="Thumbnail 10">
             </div>
             <div><p class="para">Education</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="History-subgrid">
             <div class="img">
                 <img src="thumnails/history.jpeg" alt="Thumbnail 11">
             </div>
             <div><p class="para">History</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="awards-subgrid">
             <div class="img">
                 <img src="thumnails/awards.jpeg" alt="Thumbnail 12">
             </div>
             <div><p class="para">Awards</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="Entertainment-subgrid">
             <div class="img">
                 <img src="thumnails/Entertainment.png" alt="Thumbnail 13">
             </div>
             <div><p class="para">Entertainment</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="agriculture-subgrid">
             <div class="img">
                 <img src="thumnails/agri.jpg" alt="Thumbnail 14">
             </div>
             <div><p class="para">Agriculutre</p></div>
         </div>
-        <div class="subgrid">
+        <div class="subgrid" id="business-subgrid">
             <div class="img">
                 <img src="thumnails/business.jpeg" alt="Thumbnail 15">
             </div>
@@ -143,33 +143,72 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; VISUALISATION OF DATA AROUND THE WORLD All rights reserved. 2024</p>
+            <p>&copy; 2024 VISUALISATION OF DATA AROUND THE WORLD. </p>
+            <p>All rights reserved And Unauthorized use , duplication of this material without express and written permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that full credit is given to VISUALISATION OF DATA AROUND THE WORLD with appropriate and specific direction to the original content.</p>
         </div>
     </footer>
+    
 
     <script>
-        // JavaScript to scroll to the subgrid section when Home is clicked
+        // Smooth scroll JavaScript
         document.getElementById('home-btn').addEventListener('click', function() {
-            const subgridSection = document.getElementById('subgrid-section');
-            if (subgridSection) {
-                subgridSection.scrollIntoView({ behavior: 'smooth' });
-            }
+            document.getElementById('subgrid-section').scrollIntoView({ behavior: 'smooth' });
         });
 
-        // JavaScript to scroll to the About Us section when About Us is clicked
         document.getElementById('about-btn').addEventListener('click', function() {
-            const aboutSection = document.getElementById('about-section');
-            if (aboutSection) {
-                aboutSection.scrollIntoView({ behavior: 'smooth' });
-            }
+            document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
         });
 
-        // JavaScript to scroll to the Contact Us section when Contact Us is clicked
         document.getElementById('contact-btn').addEventListener('click', function() {
-            const contactSection = document.getElementById('contact-section');
-            if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-            }
+            document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // JavaScript for navigating to Law page
+        document.getElementById('law-subgrid').addEventListener('click', function() {
+         window.open('law.html', '_blank'); // Opens the Law page in a new tab
+        });
+        document.getElementById("sports-subgrid").addEventListener('click', function() {
+         window.open('sports.html', '_blank'); // Opens the Law page in a new tab
+        });
+        document.getElementById("tech-subgrid").addEventListener('click', function() {
+         window.open('tech.html', '_blank'); // Opens the Law page in a new tab
+        });
+        document.getElementById("health-subgrid").addEventListener('click', function() {
+         window.open('health.html', '_blank'); // Opens the Law page in a new tab
+        });
+        document.getElementById("geo-subgrid").addEventListener('click', function() {
+         window.open('geopolitics.html', '_blank'); 
+        });
+        document.getElementById("Science-subgrid").addEventListener('click', function() {
+         window.open('science.html', '_blank'); 
+        });
+        document.getElementById("eco-subgrid").addEventListener('click', function() {
+         window.open('economics.html', '_blank'); 
+        });
+        document.getElementById("travel-subgrid").addEventListener('click', function() {
+         window.open('travel.html', '_blank'); 
+        });
+        document.getElementById("geography-subgrid").addEventListener('click', function() {
+         window.open('geography.html', '_blank'); 
+        });
+        document.getElementById("Education-subgrid").addEventListener('click', function() {
+         window.open('education.html', '_blank'); 
+        });
+        document.getElementById("History-subgrid").addEventListener('click', function() {
+         window.open('history.html', '_blank'); 
+        });
+        document.getElementById("awards-subgrid").addEventListener('click', function() {
+         window.open('awards.html', '_blank'); 
+        });
+        
+        document.getElementById("Entertainment-subgrid").addEventListener('click', function() {
+         window.open('entertainment.html', '_blank'); 
+        });
+        document.getElementById("agriculture-subgrid").addEventListener('click', function() {
+         window.open('agriculture.html', '_blank'); 
+        });
+        document.getElementById("business-subgrid").addEventListener('click', function() {
+         window.open('business.html', '_blank'); 
         });
     </script>
 </body>
