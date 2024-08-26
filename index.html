@@ -117,28 +117,28 @@
         <!-- Contact Us Section -->
         <div class="contact-us" id="contact-section">
             <h2>Contact Us</h2>
-            <form>
+            <form id="contact-form" method="post" enctype="multipart/form-data">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-
+                
                 <label for="organization">Organization:</label>
                 <input type="text" id="organization" name="organization" required>
-
+                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
+                
                 <label for="mobile">Mobile:</label>
                 <input type="tel" id="mobile" name="mobile" required>
-
+                
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-
-                <label for="dataset">Upload Dataset:</label>
-                <input type="file" id="dataset" name="dataset" accept=".csv, .xls, .xlsx" required>
-
+                
                 <button type="submit">Submit</button>
             </form>
         </div>
+          
+        
+        
     </div>
     <!-- Footer -->
     <footer class="footer">
@@ -150,6 +150,28 @@
     
 
     <script>
+        
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var formData = new FormData(this);
+
+            fetch('https://script.google.com/macros/s/AKfycbyw9_OKEvFQVC4a4HBPahRFLsSByUoSGuxK0o2EcGTAtcgGdsBg7VFDVDoERyLdOEGn/exec', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(result => {
+                alert('Form submitted successfully!');
+                console.log(result);
+            })
+            .catch(error => {
+                alert('Error submitting form');
+                console.error(error);
+            });
+        });
+
+
         // Smooth scroll JavaScript
         document.getElementById('home-btn').addEventListener('click', function() {
             document.getElementById('subgrid-section').scrollIntoView({ behavior: 'smooth' });
